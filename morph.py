@@ -45,7 +45,7 @@ class App(object):
         self.targets.append(self.interpolate(line, circle, 0.25))
         self.targets.append(self.interpolate(line, circle, 0.5))
         self.targets.append(self.interpolate(line, circle, 0.75))
-        self.targets.exten([circle] * 3)
+        self.targets.extend([circle] * 3)
 
         square = []
         sideL = 100  # half side length
