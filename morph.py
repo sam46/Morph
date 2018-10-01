@@ -126,8 +126,6 @@ class App(object):
             else:
                 sphereReduced.append(np.array(sphere[4][i]))
 
-        print
-        np.arange(0.1, pi, 0.1)
         th = 1.57
         sphereInit = np.array([self.rotateX(self.rotateY(vec, th), th) for vec in sphereReduced])
         self.targets.extend([sphereInit] * 3)
