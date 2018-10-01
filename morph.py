@@ -1,5 +1,5 @@
 import aggdraw
-import Tkinter
+import tkinter
 import math
 from PIL import Image, ImageTk
 from math import pi
@@ -9,8 +9,8 @@ from random import random
 
 class App():
     def __init__(self):
-        self.tk = Tkinter.Tk()
-        self.canvas = Tkinter.Canvas(width=800, height=600)
+        self.tk = tkinter.Tk()
+        self.canvas = tkinter.Canvas(width=800, height=600)
         self.canvas.pack()
         def callback(event): self.transition()
         self.canvas.bind("<Button-1>", callback)
@@ -149,7 +149,7 @@ class App():
             else:
                 sphereReduced.append(np.array(sphere[4][i]))
         
-        print np.arange(0.1, pi, 0.1)
+        printi(np.arange(0.1, pi, 0.1))
         th = 1.57
         sphereInit = np.array([self.rotateX(self.rotateY(vec, th), th) for vec in sphereReduced])
         self.targets.append(sphereInit)
