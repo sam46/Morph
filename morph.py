@@ -30,7 +30,7 @@ class App():
         self.dt = 0.0
         self.newPts = np.array(self.pts)
 
-        line = np.dstack((self.std*width/2 - width/4, np.zeros(1001)))[0] 
+        line = np.dstack((self.std*width/2 - width/4, np.zeros(1001)))[0]
         self.targets.append(line)
         self.targets.append(line)
         self.targets.append(line)
